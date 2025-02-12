@@ -4,10 +4,12 @@ Introduction to open-source EDA tools and 130nm PDKs. Floorplanning and standard
 
 <details>
   <summary>Sky130-Day1: Inception of open-source EDA, openLANE and Sky130 PDK</summary>
-  Introduction to open-source EDA, openLANE, and the Sky130 PDK.
-  ![sig](https://github.com/user-attachments/assets/04282bac-b9ac-4e4f-a03a-a18d8cbefc16)
-
+  <p>Introduction to open-source EDA, openLANE, and the Sky130 PDK.</p>
+  <p>
+    <img src="https://raw.githubusercontent.com/your-username/your-repository/main/sig.png" alt="Signature" width="400"/>
+  </p>
 </details>
+
 
 <details>
   <summary>Sky130-Day2: Chip Floor planning, Library Binding and Placement</summary>

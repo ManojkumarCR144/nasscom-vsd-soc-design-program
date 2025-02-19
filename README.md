@@ -54,6 +54,7 @@ gen_pdn
 ```
 
 ![Screenshot from 2025-02-16 18-57-08](https://github.com/user-attachments/assets/319210c7-e6c8-4ab0-8b19-2da4ea31682a)
+![Screenshot from 2025-02-16 18-57-37](https://github.com/user-attachments/assets/d22dfa7f-6417-4364-b771-9e6425a0bd4a)
 
 
 To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :

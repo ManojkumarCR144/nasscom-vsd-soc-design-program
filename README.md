@@ -53,6 +53,40 @@ openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info
 ```
 ![Screenshot from 2025-02-16 11-17-50 (1)](https://github.com/user-attachments/assets/feec19de-d301-4c0c-80be-293e93c39969)
 
+Change grid into tracks in console window as shown in below image:
+![Screenshot from 2025-02-16 11-49-48](https://github.com/user-attachments/assets/cf4797e8-be36-45c4-8b3c-8567d64f7a50)
+![Screenshot from 2025-02-16 11-57-01](https://github.com/user-attachments/assets/3dcc28d8-276e-4cee-b191-e14e6bfca109)
+![Screenshot from 2025-02-16 11-57-21](https://github.com/user-attachments/assets/5769a86c-af2d-40dc-958d-48ddde636a1c)
+
+Intersection of grids at the input and output os the inverter
+![Screenshot from 2025-02-14 18-10-10](https://github.com/user-attachments/assets/52e5b982-3d2a-4c3a-85e5-bb8090cf8960)
+![Screenshot from 2025-02-14 18-19-18](https://github.com/user-attachments/assets/3e3dcb42-2e8f-4195-864c-03991e8ed3e5)
+
+
+
+*<li>Steps to convert magic layout to std cell LEF</li>*
+
+for the extraction of lef file ,enter the given below command in the tckon window.
+
+
+lef write
+
+![Screenshot from 2025-02-14 18-25-43](https://github.com/user-attachments/assets/5ee9fbfd-38fb-4fbb-8c32-c1cc2949a796)
+![Screenshot from 2025-02-14 18-26-20](https://github.com/user-attachments/assets/d2db057a-c944-4894-b920-b2b8b1475c60)
+
+now the *sky130_inv.lef* file is created in *vsdstdcelldesign* folder in *openlane* directory.
+
+![Screenshot from 2025-02-16 12-08-06](https://github.com/user-attachments/assets/973b2714-de98-44ed-a8dd-f1e672557434)
+
+The next step is to copy the newly created *.lef* file to src folder of *picorv32a* directory along with some important libraries.
+
+libraries are present in following directory
+![Screenshot from 2025-02-19 22-43-33](https://github.com/user-attachments/assets/adc301d6-c452-4740-8c96-90cb40d68b33)
+![Screenshot from 2025-02-19 22-44-51](https://github.com/user-attachments/assets/ada15ecb-4b4e-452a-b53e-362aaaa9c762)
+
+
+
+
 
 ## DAY 5 
 

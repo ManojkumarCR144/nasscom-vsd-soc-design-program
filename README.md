@@ -43,5 +43,22 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 
 ---
 
+## DAY 5 
+
+###  Final step for RTL2GDS using tritinRoute and openSTA
+
+first step is to build  the power distribution network by follwing command :
+```
+gen_pdn
+
+```
+
+![Screenshot from 2025-02-16 18-57-08](https://github.com/user-attachments/assets/319210c7-e6c8-4ab0-8b19-2da4ea31682a)
 
 
+To check PDN, open Magic tool go to /tmp/floorplan/ indside the run folder in openlane directory by using below commands :
+
+```
+
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
+```

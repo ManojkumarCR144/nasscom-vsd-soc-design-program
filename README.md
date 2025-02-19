@@ -1,34 +1,47 @@
-# nasscom-vsd-soc-design-program
 
-Introduction to open-source EDA tools and 130nm PDKs. Floorplanning and standard cell design. Designing and characterizing a library cell. Pre-layout timing analysis and clock tree synthesis. The final leap: From RTL2GDS
+# NASSCOM-VSD-SoC-Design-Program  
+Exploring the ASIC design flow using OpenLane and the SkyWater 130nm PDK, a collaboration between Google and SkyWater. This program, led by industry expert Kunal Ghosh, provides hands-on experience in standard cell design, physical design, and GDSII generation.  
 
-<details>
-  <summary>Sky130-Day1: Inception of open-source EDA, openLANE and Sky130 PDK</summary>
-  <p>Introduction to open-source EDA, openLANE, and the Sky130 PDK.</p>
-  <p>
-    <img src="https://raw.githubusercontent.com/your-username/your-repository/main/sig.png" alt="Signature" width="400"/>
-  </p>
-</details>
+## 📌 About the Repository  
+This repository documents my learnings from a 5-day intensive workshop on VLSI SoC design.  
 
+### 🔹 **Note:**  
+*All block diagrams and flowcharts in this repository are sourced from the VLSI System Design (VSD) SoC Design course.*  
+[Visit VLSI System Design (VSD)](https://www.vlsisystemdesign.com/)  
 
-<details>
-  <summary>Sky130-Day2: Chip Floor planning, Library Binding and Placement</summary>
-  Chip Floor planning considerations, Library Binding and Placement, Cell design, and characterization flows. General timing characterization parameters.
-</details>
+## 📖 Table of Contents  
+### 🟢 **Day 1: Introduction & Synthesis**  
+- Introduction to ASIC Design Flow  
+- Overview of OpenLane and STRIVE Chipsets  
+- Commands for OpenLane Flow  
+- Tool Invocation & Operation  
+- Running Synthesis on a Design  
 
-<details>
-  <summary>Sky130-Day3: CMOS Inverter Simulation and Layout</summary>
-  Labs for CMOS inverter ngspice simulations. Inception of layout and CMOS fabrication process. Sky130 tech file labs.
-</details>
+### 🟢 **Day 2: Floorplanning & Placement**  
+- Chip Floorplanning Considerations  
+- Steps for Running Floorplan & Reviewing Files  
+- Placement Execution and Analysis  
 
-<details>
-  <summary>Sky130-Day4: Timing Analysis and Clock Tree Synthesis</summary>
-  Timing modeling using delay tables. Timing analysis with ideal clocks using openSTA. Clock tree synthesis TritonCTS and signal integrity. Timing analysis with real clocks using openSTA.
-</details>
+### 🟢 **Day 3: Standard Cell Design & Characterization**  
+- Standard Cell Design using Magic & NGSPICE Characterization  
+  - Creating a Standard Cell Layout & Extracting Spice Netlist  
+  - CMOS Inverter Layout in Magic  
+  - Netlist Extraction & Transient Analysis  
+- Introduction to Magic and Loading Sky130 Tech Rules  
 
-<details>
-  <summary>Sky130-Day5: Routing and Design Rule Check (DRC)</summary>
-  Routing and design rule check (DRC). Power distribution network and routing. TritonRoute features.
-</details>
+### 🟢 **Day 4: Timing Analysis & Clock Tree Synthesis (CTS)**  
+- Pre-Layout Timing Analysis & CTS  
+- Converting Magic Layout to Standard Cell LEF  
+- Optimizing Synthesis to Fix Slack  
+- Timing Analysis using OpenSTA  
+- Post-CTS OpenROAD Timing Analysis  
+
+### 🟢 **Day 5: RTL-to-GDS Flow Completion**  
+- Finalizing RTL-to-GDS Flow using TritonRoute & OpenSTA  
+
+## 🏆 Acknowledgment  
+
+---
+
 
 

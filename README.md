@@ -79,6 +79,10 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 run_routing
 ```
+![Screenshot from 2025-02-16 21-37-40](https://github.com/user-attachments/assets/cb45aa76-93e5-41ae-ab8c-01f3098aa726)
+Routing is done.
+![Screenshot from 2025-02-16 22-43-30](https://github.com/user-attachments/assets/0339cc25-b809-4d44-9ea9-9f8a563eb4cc)
+
 
 To view the final design  with routing in Magic tool , go to the results/routing/ in  the runs folder of openlane directory by using below command :
 

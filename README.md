@@ -127,8 +127,7 @@ next commands are given below:
 
 ## DAY 5 
 
-###  Final step for RTL2GDS using ![Uploading Screenshot from 2025-02-16 13-14-07.png…]()
-tritinRoute and openSTA
+###  Final step for RTL2GDS using tritinRoute and openSTA
 
 first step is to build  the power distribution network by follwing command :
 ```

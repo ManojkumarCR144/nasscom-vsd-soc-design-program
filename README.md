@@ -7,6 +7,7 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 
 ### 🔹 **Note:**  
 *All block diagrams and flowcharts in this repository are sourced from the VLSI System Design (VSD) SoC Design course.*  
+
 [Visit VLSI System Design (VSD)](https://www.vlsisystemdesign.com/)  
 
 ## 📖 Table of Contents  

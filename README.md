@@ -85,7 +85,26 @@ libraries are present in following directory
 ![Screenshot from 2025-02-19 22-43-33](https://github.com/user-attachments/assets/adc301d6-c452-4740-8c96-90cb40d68b33)
 ![Screenshot from 2025-02-19 22-44-51](https://github.com/user-attachments/assets/ada15ecb-4b4e-452a-b53e-362aaaa9c762)
 
+Now the next step is to edit the config.tcl of picorv32a design.
 
+config.tcl file is present in picorv32a folder
+
+
+NOW go to the openlane directory run docker command to go to bash terminal
+
+next commands are given below:
+
+
+![Screenshot from 2025-02-19 21-30-38](https://github.com/user-attachments/assets/7de84003-2f36-4310-a85b-2c1d1e21b284)
+
+![Screenshot from 2025-02-19 21-36-12](https://github.com/user-attachments/assets/36d722aa-a598-4b98-876f-e821641c197a)
+![Screenshot from 2025-02-19 21-41-48](https://github.com/user-attachments/assets/6eb7c080-131a-4009-a4ab-3700013bf89b)
+
+![Screenshot from 2025-02-19 21-42-11](https://github.com/user-attachments/assets/8197b336-0a38-4e8a-b5fd-456dac23bb41)
+![Screenshot from 2025-02-19 21-42-28](https://github.com/user-attachments/assets/3fc0f32e-56ee-4976-af08-07e1e7e530f6)
+![Screenshot from 2025-02-19 21-42-58](https://github.com/user-attachments/assets/04fb8e6b-ac96-4d0f-98e8-20b17ab55dc3)
+
+![Screenshot from 2025-02-19 21-43-22](https://github.com/user-attachments/assets/87b86adc-0815-4f3c-9be7-df62fa51b075)
 
 
 

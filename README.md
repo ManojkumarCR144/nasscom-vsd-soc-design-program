@@ -42,6 +42,17 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 ## 🏆 Acknowledgment  
 
 ---
+## DAY 4
+### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>
+The next step is to get the **.lef** file from the inverter design.
+
+Open the tracks.info file 
+directory is : 
+```
+openlane_working_dir/pdk/sky130/libs.tech /openlane/sky130_fd_sc_hd/track.info 
+```
+![Screenshot from 2025-02-16 11-17-50 (1)](https://github.com/user-attachments/assets/feec19de-d301-4c0c-80be-293e93c39969)
+
 
 ## DAY 5 
 

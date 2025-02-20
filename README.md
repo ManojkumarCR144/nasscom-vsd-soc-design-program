@@ -168,7 +168,6 @@ for fully automated run we can use command : ./flow.tcl -deisgn picorv32a
 <ul
 
 
-    
 **<li>Directory order to invoke the tool OPENLANE </li>**
 ```
 Desktop/work/tools/openlane_working_dir/openlane
@@ -206,8 +205,9 @@ so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
 
 
 
-
 ## DAY-2
+
+
 Configuration variables and their default values for *floorplanning* , *placement* , *CTS* , *Routing* , *magic* and *LVS*.
 ![Screenshot from 2025-02-08 10-26-30](https://github.com/user-attachments/assets/2171bf24-4f30-49c6-86e6-56cd53cd665f)
 ![Screenshot from 2025-02-08 10-26-40](https://github.com/user-attachments/assets/e865cf9f-180f-4554-ab5f-4bf27413e18e)
@@ -402,7 +402,6 @@ therfore rise time= (2.24 - 2.18)e-09 = 0.64e-09s
 <br>
 
 
-
 <br>
 therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
 
@@ -501,6 +500,8 @@ DRC is checked as shown in below image:
 
 
 ## DAY-4
+
+
 ### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>
 The next step is to get the **.lef** file from the inverter design.
 
@@ -519,8 +520,6 @@ Change grid into tracks in console window as shown in below image:
 Intersection of grids at the input and output os the inverter
 ![Screenshot from 2025-02-14 18-10-10](https://github.com/user-attachments/assets/52e5b982-3d2a-4c3a-85e5-bb8090cf8960)
 ![Screenshot from 2025-02-14 18-19-18](https://github.com/user-attachments/assets/3e3dcb42-2e8f-4195-864c-03991e8ed3e5)
-
-
 
 *<li>Steps to convert magic layout to std cell LEF</li>*
 
@@ -583,7 +582,6 @@ place_io
 tap_decap_or
 
 ```
-
 
 ![Screenshot from 2025-02-19 21-42-11](https://github.com/user-attachments/assets/8197b336-0a38-4e8a-b5fd-456dac23bb41)
 ![Screenshot from 2025-02-19 21-42-28](https://github.com/user-attachments/assets/3fc0f32e-56ee-4976-af08-07e1e7e530f6)
@@ -662,9 +660,8 @@ echo $::env(CTS_CLK_BUFFER_LIST)
 ![Screenshot from 2025-02-16 18-51-19](https://github.com/user-attachments/assets/8f184dc9-05eb-4f13-9afb-aacde9807e96)
 
 
-
-
 ## DAY-5 
+
 
 ###  Final step for RTL2GDS using tritinRoute and openSTA
 
@@ -673,7 +670,6 @@ first step is to build  the power distribution network by follwing command :
 gen_pdn
 
 ```
-
 ![Screenshot from 2025-02-16 18-57-08](https://github.com/user-attachments/assets/319210c7-e6c8-4ab0-8b19-2da4ea31682a)
 ![Screenshot from 2025-02-16 18-57-37](https://github.com/user-attachments/assets/d22dfa7f-6417-4364-b771-9e6425a0bd4a)
 
@@ -704,14 +700,12 @@ run_routing
 Routing is done.
 ![Screenshot from 2025-02-16 22-43-30](https://github.com/user-attachments/assets/0339cc25-b809-4d44-9ea9-9f8a563eb4cc)
 
-
 To view the final design  with routing in Magic tool , go to the results/routing/ in  the runs folder of openlane directory by using below command :
 
 ```
 magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.def &
 
 ```
-
 
 ![8](https://github.com/user-attachments/assets/b5370bc4-1ea9-46bd-9e17-9c39bd73ffdf)
 ![9](https://github.com/user-attachments/assets/750bc2e9-7f4d-4a1d-8895-ece57687fbf2)

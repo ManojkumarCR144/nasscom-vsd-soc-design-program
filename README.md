@@ -261,6 +261,35 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ```
 
 ![Screenshot from 2025-02-08 12-58-22](https://github.com/user-attachments/assets/201ae215-b1f2-45a0-b9af-7b64272cad95)
+<br>
+To zoom in press left button of mouse then right button and press z 
+<br>
+![Screenshot from 2024-05-16 22-38-02](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/5e7db0d4-169e-4faf-ba66-ddf3a5f50b6e)
+<br>
+
+In order to know the details of any cell in the layout , just move the cursor to that cell and press **S** to select the cell and then in the window of **tkcon** enter the command **"what"**. then it will displey the details of the selected cell.
+lets see the detail of horizontal and vertical pins , in tkcon window it shows that the pin is in the metal 3 for horizontal pins ,similarly for the vertical pins, we see that thepin is at metal 2. image is shown below.
+<br>
+![Screenshot from 2024-05-16 22-40-09](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e492e6b9-223c-4ae8-94f0-c2c774ff56f4)
+![Screenshot from 2024-05-16 22-40-20](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f4cfea60-a78e-479a-ad9b-da645c1b3311)
+
+
+<br>
+
+![Screenshot from 2024-05-16 22-42-19](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/cc2a9a61-fe67-44a8-bed4-f7f7467676d5)
+![Screenshot from 2024-05-16 22-42-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/da1fd5a6-6a93-4f68-af1f-280602bc6f0d)
+
+<br>
+</ul>
+
+
+### STEPS TO RUN PLACEMENT
+
+Once the Floorplanning is done sucessfully , the next step in the process is Placement. 
+To run the placement use the command
+```
+run_placement
+```
 
 
 

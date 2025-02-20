@@ -187,6 +187,19 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 -ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
 
 ```
+![Screenshot from 2025-02-08 11-59-28](https://github.com/user-attachments/assets/a92c5537-b921-49df-bf20-9552d5c4fd3d
+Design preperation completed
+![Screenshot from 2025-02-08 12-05-29](https://github.com/user-attachments/assets/126504c5-2b40-47e3-97b9-bd6f1ea687a4)
+
+
+Configuration variables and their default values.
+![Screenshot from 2025-02-08 10-26-30](https://github.com/user-attachments/assets/2171bf24-4f30-49c6-86e6-56cd53cd665f)
+![Screenshot from 2025-02-08 10-26-40](https://github.com/user-attachments/assets/e865cf9f-180f-4554-ab5f-4bf27413e18e)
+![Screenshot from 2025-02-08 10-26-44](https://github.com/user-attachments/assets/4dc28bbb-fc5b-490f-aa53-e8d4331a0ecb)
+![Screenshot from 2025-02-08 10-26-51](https://github.com/user-attachments/assets/428ce80a-b853-41ed-bdb4-a3ff55780e5f)
+
+
+
 
 ## DAY 3
 

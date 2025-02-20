@@ -115,11 +115,71 @@ Spice file
 ```
 ![Screenshot from 2025-02-13 20-27-34](https://github.com/user-attachments/assets/d853404a-871c-410a-8a16-a7684042cf03)
 
-Transient Analysis:
+Transient Analysis of the CMOS inverter is given below:
 When C=0.07fF
 ![Screenshot from 2025-02-13 20-24-05](https://github.com/user-attachments/assets/f2a4c53c-a8a8-4c3d-bd80-87c688decc69)
 when C=2fF
 ![Screenshot from 2025-02-13 20-26-28](https://github.com/user-attachments/assets/bdc46569-22cb-44bf-a5d5-2a7c0ce60313)
+
+next step is to calculate the rise time , fall time , cell rise delay and cell fall delay:
+click on the waveforms to get values i.e 
+
+--> 20 % of VDD (3.3 V) is 0.66V
+--> 80 % of VDD (3.3 V) is 2.64V
+--> 50 % of VDD (3.3 V) is 1.65V
+<br>
+1) **Rise time**- Time taken to the output waveform to 20% value to 80% value.
+
+<br>
+
+![WhatsApp Image 2024-05-21 at 1 56 45 AM(1)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/e6be18ed-736a-4df4-ae12-a09afac58937)
+
+<br>
+therfore rise time= (2.24 - 2.18)e-09 = 0.64e-09s
+  
+2) **Fall time**- Time taken to the output waveform to 80% value to 20% value.
+<br>
+
+
+
+<br>
+therfore fall time = (2.17999 - 2.12)e-09 = 0.5999e-09s
+
+
+5) **cell rise delay**-Time difference between the 50% value of input and 50% value of the output.
+
+<br>
+
+![WhatsApp Image 2024-05-21 at 1 56 46 AM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f03945b9-f78b-46b8-bc39-af73de135a37)
+
+
+
+<br>
+therfore cell rise delay or propogation delay = (2.2107 - 2.1501)e-09 = 0.061e-09s
+
+7) **cell fall delay**-Time difference between output falling to 50% and input is rising to 50% value.
+
+<br>
+
+![WhatsApp Image 2024-05-21 at 1 56 45 AM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/04d2adf7-f47f-4d9f-830e-1f5f3ad379d0)
+
+
+<br>
+thefore cell fall delay = (4.077 -4.05)e-09 = 0.027e-09 s
+
+</ul>
+
+### INTRODUCTION TO MAGIC TOOL AND STEPS TO LOAD SKY130 TECH - RULES 
+<ul>
+First step is to download the lab files required for DRC error fixing by below coammand
+    
+```
+   wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+```
+to open magic use 
+```
+  magic -d XR
+```
 
 
 

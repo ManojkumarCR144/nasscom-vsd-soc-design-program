@@ -588,16 +588,25 @@ tap_decap_or
 ![Screenshot from 2025-02-19 21-42-11](https://github.com/user-attachments/assets/8197b336-0a38-4e8a-b5fd-456dac23bb41)
 ![Screenshot from 2025-02-19 21-42-28](https://github.com/user-attachments/assets/3fc0f32e-56ee-4976-af08-07e1e7e530f6)
 ![Screenshot from 2025-02-19 21-42-58](https://github.com/user-attachments/assets/04fb8e6b-ac96-4d0f-98e8-20b17ab55dc3)
+next command is to run placement
+```
+run_placement
+
+```
 
 ![Screenshot from 2025-02-19 21-43-22](https://github.com/user-attachments/assets/87b86adc-0815-4f3c-9be7-df62fa51b075)
+The standard cell inverter can be seen in the below image using magic tool
 ![Screenshot from 2025-02-16 13-09-57](https://github.com/user-attachments/assets/8f5171f6-533a-4255-94a4-9ab223c38b96)
+use the below command in tckon window to check whether inverter placed properly or not
+```
+expand
+```
 ![Screenshot from 2025-02-16 13-14-07](https://github.com/user-attachments/assets/28059584-1605-4972-883e-e7fae4cfb3d3)
 
 ![Screenshot from 2025-02-16 13-14-15](https://github.com/user-attachments/assets/fd37a774-9c2a-413c-a3e3-285a2d395ebf)
 ![Screenshot from 2025-02-17 18-09-17](https://github.com/user-attachments/assets/39fcf3f3-d2ae-4d4c-897a-a6eac3598dea)
 
 ![Screenshot from 2025-02-19 23-18-48](https://github.com/user-attachments/assets/e93e6114-5fc2-4be6-baf2-67ce7e424983)
-![Screenshot from 2025-02-19 23-19-36](https://github.com/user-attachments/assets/e1cfd5de-92ed-47bb-
 ![Screenshot from 2025-02-16 15-12-05](https://github.com/user-attachments/assets/931dabde-1ab4-4631-8ec4-4af44e7a2cda)
 
 ![Screenshot from 2025-02-16 15-12-09](https://github.com/user-attachments/assets/c466bd9f-f718-43fa-82d4-9b6b5c26465d)

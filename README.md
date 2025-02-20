@@ -292,6 +292,16 @@ run_placement
 ```
 ![Screenshot from 2025-02-20 22-53-27](https://github.com/user-attachments/assets/82915ef4-a8a5-4f93-94f6-01e630ed9511)
 
+
+
+Once Placement process is done , next step is to check whether the cells are placed correctly or not.by using **magic** tool.
+
+use the below command to view the standerd cells placement. image is shown below
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def &
+
+```
+
 ![Screenshot from 2025-02-10 20-04-41](https://github.com/user-attachments/assets/bd9bb9ca-db4b-4f18-8649-b52aabc1adf2)
 
 

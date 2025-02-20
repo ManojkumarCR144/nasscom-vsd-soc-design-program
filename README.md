@@ -605,13 +605,19 @@ expand
 
 ![Screenshot from 2025-02-16 13-14-15](https://github.com/user-attachments/assets/fd37a774-9c2a-413c-a3e3-285a2d395ebf)
 ![Screenshot from 2025-02-17 18-09-17](https://github.com/user-attachments/assets/39fcf3f3-d2ae-4d4c-897a-a6eac3598dea)
-
+next create a my_base.sdc file in openlane/designs/picorv32a/src directory. write the code as given in below image in my_base.sdc file.
 ![Screenshot from 2025-02-19 23-18-48](https://github.com/user-attachments/assets/e93e6114-5fc2-4be6-baf2-67ce7e424983)
 ![Screenshot from 2025-02-16 15-12-05](https://github.com/user-attachments/assets/931dabde-1ab4-4631-8ec4-4af44e7a2cda)
 
 ![Screenshot from 2025-02-16 15-12-09](https://github.com/user-attachments/assets/c466bd9f-f718-43fa-82d4-9b6b5c26465d)
 
 ![Screenshot from 2025-02-16 17-08-21](https://github.com/user-attachments/assets/0b02a770-96c7-4db8-8c8c-528d0fff9012)
+To Run clocktree synthesis use below command :
+
+```
+run_cts
+```
+
 
 ![Screenshot from 2025-02-16 17-12-36](https://github.com/user-attachments/assets/6bd987b2-9e48-4c9c-89c2-d544ede67c08)
 

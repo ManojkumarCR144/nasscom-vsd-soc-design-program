@@ -73,7 +73,7 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 CMOS inverter layout
 ![Screenshot from 2025-02-11 18-13-33](https://github.com/user-attachments/assets/99fb518b-5e1f-4079-9f0b-9996aa039e41)
 NMOS
-![Screenshot from 2025-02-11 20-11-49](https://github.com/user-attachments/assets/c58490c4-4907-424f-824c-99662d47a3d0
+![Screenshot from 2025-02-11 20-11-49](https://github.com/user-attachments/assets/c58490c4-4907-424f-824c-99662d47a3d0)
 PMOS
 ![Screenshot from 2025-02-11 20-12-38](https://github.com/user-attachments/assets/f8e0e6b4-df90-47dc-bad2-85a687003cc7)
 Y(output) connecting the drain of nmos and pmos
@@ -114,6 +114,8 @@ Spice file
   plot y vs time a
 ```
 ![Screenshot from 2025-02-13 20-27-34](https://github.com/user-attachments/assets/d853404a-871c-410a-8a16-a7684042cf03)
+
+Transient Analysis:
 When C=0.07fF
 ![Screenshot from 2025-02-13 20-24-05](https://github.com/user-attachments/assets/f2a4c53c-a8a8-4c3d-bd80-87c688decc69)
 when C=2fF

@@ -191,10 +191,19 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 Design preperation completed
 ![Screenshot from 2025-02-08 12-05-29](https://github.com/user-attachments/assets/126504c5-2b40-47e3-97b9-bd6f1ea687a4)
 
+### GETTING STARTED - SYNTHESIZING THE DESIGN :
+
+Next step is we need to perform the Synthesis process on the design. command used is
+
 ```
 run_synthesis
 ```
+It'll take a while (1-2 min) to perform synthesis but once it's done,we will see a message saying **'Synthesis was successful'**.
 ![Screenshot from 2025-02-08 12-15-36](https://github.com/user-attachments/assets/cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc)
+Total number of counter D flip-flops is **1613** and the total number of cells is **18036**.
+The flipflop percentage is obtained by formula i.e **Flop Ratio = ((no of D_flipflops) / (Total no of cells))100**
+so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
+
 
 
 
@@ -205,14 +214,52 @@ Configuration variables and their default values for *floorplanning* , *placemen
 ![Screenshot from 2025-02-08 10-26-44](https://github.com/user-attachments/assets/4dc28bbb-fc5b-490f-aa53-e8d4331a0ecb)
 ![Screenshot from 2025-02-08 10-26-51](https://github.com/user-attachments/assets/428ce80a-b853-41ed-bdb4-a3ff55780e5f)
 
+### CHIP FLOOR PLANNING CONSIDERATION 
+
+<ul>
+    
+**<li> UTILIZATION FACTOR AND ASPECT RATIO </li>**
+
+In order to calculate the Utilization Factor and Aspect Ratio, we must know the height and width of core and die areas.
+formula is given by:
+
+**Utilization Factor = area occupied by the netlist / Total area occupied by the core**
+
+--> If the utilization factor is 1 then it denotes 100 % utilization.
+--> We never go for 100 % utilization, we go for 50 % or 60 % factor.
+
+**Aspect Ratio = height of the core / width of the core**
+
+--> When aspect ratio is 1 , then its a square chip.
+
+
+
+### STEPS TO RUN FLOORPLAN & REVIEW FLOORPLAN FILES 
+
+Once synthesis is sucessful,next step is floorplan. we use command 
 ```
 run_floorplan
 ```
+This will create a folder inside **runs** folder of **picorv32a** directory.
+it will take a while to execute.once done we will get **PDN GENERATION IS SUCESSFUL** as shown in below image.
 ![Screenshot from 2025-02-08 12-16-47](https://github.com/user-attachments/assets/e4273110-7375-4fd9-b618-68d5fb65a8e5)
 ![Screenshot from 2025-02-08 12-26-25](https://github.com/user-attachments/assets/abd1dd0e-436c-4c3c-931c-58195a28c19b)
-Units is measured in microns
-DIEAREA is given in the below image:
+Units is measured in microns,
+**DIEAREA** is given in the below image:
 ![Screenshot from 2025-02-08 12-31-52](https://github.com/user-attachments/assets/2d61aa11-5b4e-43ea-af14-a8cdf80a8814)
+
+To see the actual layout after the floorplan ,go the folders as shown below:
+```
+openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan
+```
+
+now we need to open the **magic** file by the  following command
+<br>
+
+```
+magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def &
+```
+
 ![Screenshot from 2025-02-08 12-58-22](https://github.com/user-attachments/assets/201ae215-b1f2-45a0-b9af-7b64272cad95)
 
 

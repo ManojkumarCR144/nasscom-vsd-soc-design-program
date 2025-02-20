@@ -622,6 +622,43 @@ run_cts
 ![Screenshot from 2025-02-16 17-12-36](https://github.com/user-attachments/assets/6bd987b2-9e48-4c9c-89c2-d544ede67c08)
 
 ![Screenshot from 2025-02-16 18-48-07](https://github.com/user-attachments/assets/2af07a93-bcf0-4f11-8ae9-7a4bcbfab694)
+next commands :
+
+```
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+```
+
+
+```
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/placement/picorv32a.placement.def
+run_cts
+
+```
+
+
+<li> Enter the openROAD flow and check timing by using the following commands </li>
+
+```
+openroad
+read_lef /openLANE_flow/designs/picorv32a/runs/05-05_10-43/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/cts/picorv32a.cts.def
+write_db pico_cts1.db
+read_db pico_cts1.db
+read_verilog /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis_cts.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+
+exit
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+set ::env(CTS_CLK_BUFFER_LIST) [linsert $::env(CTS_CLK_BUFFER_LIST) 0 sky130_fd_sc_hd__clkbuf_1]
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+
+```
 ![Screenshot from 2025-02-16 18-51-19](https://github.com/user-attachments/assets/8f184dc9-05eb-4f13-9afb-aacde9807e96)
 
 

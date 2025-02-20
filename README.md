@@ -44,7 +44,7 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 
 ---
 
-## DAY 1 : 
+## DAY-1 : 
 
 ### INTRODUCTION
 
@@ -207,7 +207,7 @@ so we get Flop ratio =(1613/18036)*100 = **8.94 %.**
 
 
 
-## DAY 2
+## DAY-2
 Configuration variables and their default values for *floorplanning* , *placement* , *CTS* , *Routing* , *magic* and *LVS*.
 ![Screenshot from 2025-02-08 10-26-30](https://github.com/user-attachments/assets/2171bf24-4f30-49c6-86e6-56cd53cd665f)
 ![Screenshot from 2025-02-08 10-26-40](https://github.com/user-attachments/assets/e865cf9f-180f-4554-ab5f-4bf27413e18e)
@@ -305,7 +305,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![Screenshot from 2025-02-10 20-04-41](https://github.com/user-attachments/assets/bd9bb9ca-db4b-4f18-8649-b52aabc1adf2)
 
 
-## DAY 3
+## DAY-3
 
   1.Git clone vsdstdcelldesign    
   Commands to open inverter layout in magic  
@@ -500,7 +500,7 @@ DRC is checked as shown in below image:
 </ul>
 
 
-## DAY 4
+## DAY-4
 ### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>
 The next step is to get the **.lef** file from the inverter design.
 
@@ -526,9 +526,9 @@ Intersection of grids at the input and output os the inverter
 
 for the extraction of lef file ,enter the given below command in the tckon window.
 
-
+```
 lef write
-
+```
 ![Screenshot from 2025-02-14 18-25-43](https://github.com/user-attachments/assets/5ee9fbfd-38fb-4fbb-8c32-c1cc2949a796)
 ![Screenshot from 2025-02-14 18-26-20](https://github.com/user-attachments/assets/d2db057a-c944-4894-b920-b2b8b1475c60)
 
@@ -546,15 +546,44 @@ Now the next step is to edit the config.tcl of picorv32a design.
 
 config.tcl file is present in picorv32a folder
 
-
-NOW go to the openlane directory run docker command to go to bash terminal
+NOW go to the openlane directory run **docker** command to go to bash terminal
 
 next commands are given below:
 
+```
+./flow.tcl -interactive
+package require openlane 0.9
+prep -design picorv32a
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]      
+add_lefs -src $lefs
+run_synthesis
+```
 
 ![Screenshot from 2025-02-19 21-30-38](https://github.com/user-attachments/assets/7de84003-2f36-4310-a85b-2c1d1e21b284)
+**<li> Steps to configure synthesis settings to fix slack </li>**
+
+Once the synthesis is sucessfull, check the slack
 
 ![Screenshot from 2025-02-19 21-36-12](https://github.com/user-attachments/assets/36d722aa-a598-4b98-876f-e821641c197a)
+
+we get wns= -23.89  and tns== -711.5.
+
+next command is to run floorplan
+
+```
+run_floorplan
+
+```
+if error occurs in floorplan stage use below commands one by one :
+```
+init_floorplan
+
+place_io
+
+tap_decap_or
+
+```
+
 
 ![Screenshot from 2025-02-19 21-42-11](https://github.com/user-attachments/assets/8197b336-0a38-4e8a-b5fd-456dac23bb41)
 ![Screenshot from 2025-02-19 21-42-28](https://github.com/user-attachments/assets/3fc0f32e-56ee-4976-af08-07e1e7e530f6)
@@ -583,7 +612,7 @@ next commands are given below:
 
 
 
-## DAY 5 
+## DAY-5 
 
 ###  Final step for RTL2GDS using tritinRoute and openSTA
 

@@ -292,6 +292,8 @@ run_placement
 ```
 ![Screenshot from 2025-02-20 22-53-27](https://github.com/user-attachments/assets/82915ef4-a8a5-4f93-94f6-01e630ed9511)
 
+![Screenshot from 2025-02-10 20-04-41](https://github.com/user-attachments/assets/bd9bb9ca-db4b-4f18-8649-b52aabc1adf2)
+
 
 ## DAY 3
 

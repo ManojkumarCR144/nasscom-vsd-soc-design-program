@@ -191,14 +191,30 @@ Now enter the follwing commands to invoke the openlane in terminal i.e using bas
 Design preperation completed
 ![Screenshot from 2025-02-08 12-05-29](https://github.com/user-attachments/assets/126504c5-2b40-47e3-97b9-bd6f1ea687a4)
 
+```
+run_synthesis
+```
+![Screenshot from 2025-02-08 12-15-36](https://github.com/user-attachments/assets/cd5d598f-6e4c-420a-9270-6fc1f7dd1bbc)
 
+
+
+## DAY 2
 Configuration variables and their default values for *floorplanning* , *placement* , *CTS* , *Routing* , *magic* and *LVS*.
 ![Screenshot from 2025-02-08 10-26-30](https://github.com/user-attachments/assets/2171bf24-4f30-49c6-86e6-56cd53cd665f)
 ![Screenshot from 2025-02-08 10-26-40](https://github.com/user-attachments/assets/e865cf9f-180f-4554-ab5f-4bf27413e18e)
 ![Screenshot from 2025-02-08 10-26-44](https://github.com/user-attachments/assets/4dc28bbb-fc5b-490f-aa53-e8d4331a0ecb)
 ![Screenshot from 2025-02-08 10-26-51](https://github.com/user-attachments/assets/428ce80a-b853-41ed-bdb4-a3ff55780e5f)
 
-## DAY 2
+```
+run_floorplan
+```
+![Screenshot from 2025-02-08 12-16-47](https://github.com/user-attachments/assets/e4273110-7375-4fd9-b618-68d5fb65a8e5)
+![Screenshot from 2025-02-08 12-26-25](https://github.com/user-attachments/assets/abd1dd0e-436c-4c3c-931c-58195a28c19b)
+Units is measured in microns
+DIEAREA is given in the below image:
+![Screenshot from 2025-02-08 12-31-52](https://github.com/user-attachments/assets/2d61aa11-5b4e-43ea-af14-a8cdf80a8814)
+![Screenshot from 2025-02-08 12-58-22](https://github.com/user-attachments/assets/201ae215-b1f2-45a0-b9af-7b64272cad95)
+
 
 
 
@@ -342,8 +358,6 @@ to open magic use
 ```
 ![Screenshot from 2025-02-13 22-34-56](https://github.com/user-attachments/assets/b81337b6-da34-47b6-9e52-cb191b2a7e0f)
 ![Screenshot from 2025-02-13 22-38-27](https://github.com/user-attachments/assets/0701f863-be5a-49d2-abfa-6e6c4b2caf84)
-![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/a0b53e00-2b1e-4014-a95d-a536c2fbd543)
-
 .magicrc file
 ![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/b0bac58e-69b1-4dfd-962e-7798ab04d4cb)
 

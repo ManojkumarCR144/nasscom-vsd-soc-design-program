@@ -446,10 +446,7 @@ to open magic use
 .magicrc file
 ![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/b0bac58e-69b1-4dfd-962e-7798ab04d4cb)
 
-
 Open met met3.mag file from file -> Open in magic window
-
-<br>
 
 ![Screenshot from 2024-05-21 02-28-23](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/981cce52-bfa1-4a4b-b97e-dcb17c62bd17)
 <br

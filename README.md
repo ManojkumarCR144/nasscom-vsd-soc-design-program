@@ -44,6 +44,150 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 
 ---
 
+## DAY 1 : 
+
+### INTRODUCTION
+
+In the DAY 1 lecture series 
+
+   - Learned how VLSI technology packs tons of tiny transistors onto chips, making electronics faster, smaller, and cheaper.
+
+   - Looked at an Arduino board to understand why its main 'chip' is a big deal.
+   - Saw how this chip, known as the microcontroller unit (MCU), runs everything on the board, like reading sensors and controlling lights.
+   - Noticed how VLSI tech helps make these chips, making gadgets like Arduinos possible.
+   - The Arduino Microcontroller Board comprises various elements like the microprocessor, voltage regulator, I/O pins, and communication interfaces. The microprocessor, highlighted , acts as the brain, executing instructions and managing the board's functions. 
+ 
+ <li> Chip Packaging and Components </li>
+ <br>
+- The places that make chips, called <b>'FOUNDRY'</b>, are really important for how well chips work.
+<br>
+- <b>'MACROS'</b> are digital parts inside chips that make them work better.
+
+<br>
+
+ There are three main components ,they are:
+ 
+1) <b>Core</b>: Refers to the region where our complete logic will be implemented.
+
+2) <b>Pads</b>:Through pads signals travel from external sources to chip or vice-versa.
+
+3) <b>Die</b>: Refers to the entire area of the chip.
+
+   ![components (1)](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/fa09ff1c-d118-45dc-84b9-68214bddaa6f)
+
+<br>
+
+
+**<li>Components of open-source digital asic design </li>**
+<br>
+![WhatsApp Image 2024-05-17 at 5 27 31 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/1bd13b83-370d-4cd0-bb20-1fee9153c474)
+<br>
+
+Process Design Kit is PDK data which contains information about the manufacturing process. In 2020, Google collaborated with **SkyWater Technology** to release an **open-source FOSS 130nm** Production PDK.
+
+**<li>RTL2GDS Flow</li>**
+
+![WhatsApp Image 2024-05-17 at 5 27 32 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/4316462c-f36c-44a2-a9d9-406bd5c7a295)
+
+<br>
+
+Above shows simplified RTL to GDSII flow.Steps invloved are explained as follows:
+
+**Step 1 - Synthesis:** -In thi stage RTL is converted to gate level netlist using components from the Standard Cell Library(SCL). These components, known as Standard Cells, have regular layouts with varying widths.
+
+**Step 2 - Floor Planning & Power Planning: :** In floor planning, we decide where to put components on the chip to make it as small as possible. We also plan where to put inputs, outputs, dimensions and power connections.
+
+In power planning, the power supply network (VDD & GND) using special components of chip will be laid out.  
+
+**step 3 - Placement:**
+
+During placement, we put components and standard cells in their designated spots on the chip. We do this in two steps: first Global Placement, then Detailed Placement.
+
+**step 4 - CTS (Clock Tree Synthesis):**
+
+Before connecting signals, we organize the clock signals to avoid timing issues. We use special structures to make sure the clock arrives at different parts of the chip at the same time.
+
+**step 5 - Routing:**
+
+Once the clock is set up, we connect the rest of the signals. We use the remaining metal layers to make these connections. First, we plan out the routes (Global Routing), then we actually make the connections (Detailed Routing).
+
+**step 6 - Sign-off:**
+
+Finally, we check if everything is correct. We make sure the design follows the rules (Design Rule Check - DRC), matches the plan (Layout Vs. Schematic - LVS), and meets timing requirements (Static Timing Analysis - STA).
+
+
+## OPENLANE AND STRIVE CHIPSETS
+
+OpenLane began as an open-source project aiming to facilitate a genuine open-source tape-out experiment. It originated from e-fabless and serves as a platform that incorporates various tools like **Yosys, OpenRoad, Magic, KLlayout**, and other open-source tools. OpenLane streamlines the different stages of silicon implementation, making them easier to understand and work with. At e-fabless, they have a series of SOC (System on Chip) designs called Strive. Strive SOCs are entirely open, featuring open PDK (Process Design Kit), open RTL (Register Transfer Level), and open EDA (Electronic Design Automation) tools.
+
+The Main aim of Openlane is to **produce clean GDSII without human intervention.**
+
+<br>
+
+**<li>OpenLANE ASIC design flow</li>**
+
+<br>
+
+![WhatsApp Image 2024-05-17 at 8 31 48 PM](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/f94a13ab-6cbe-4735-b360-619977aa5fd0)
+
+</ul>
+<br>
+
+### COMMANDS USED IN OpenLANE FLOW:
+
+```
+1. prep -design <design> -tag <tag> -config <config> -init_design_config -overwrite
+2. run_synthesis
+3. run_floorplan
+4. run_placement
+5. run_cts
+6. run_routing
+7. run_magic
+8. run_magic
+9. run_magic_spice_export
+10. run_magic_drc
+11. run_netgen
+12. run_magic_antenna_check
+
+for fully automated run we can use command : ./flow.tcl -deisgn picorv32a
+```
+
+
+### TOOL INVOCATION & OPERATION:
+
+- We're using the Sky130_fd_sc_hd PDK variant.
+- "Sky130" refers to the process or node name.
+- "fd" indicates the foundry name, which is SkyWater foundry.
+- "sc" denotes standard cell library files.
+- "hd" represents high density, a specific variant.
+- The Sky130_fd_sc_hd variant includes various technology files such as Verilog, Spice, Techlef, Meglef, Mag, GDS, CDL, LIB, LEF, etc.
+- The techlef file provides layer information essential for the design process.
+
+  <br>
+
+<ul
+
+
+    
+**<li>Directory order to invoke the tool OPENLANE </li>**
+```
+Desktop/work/tools/openlane_working_dir/openlane
+```
+
+In order to enter into BASH in terminal ,we must use a command 
+```
+docker
+```
+
+Now enter the follwing commands to invoke the openlane in terminal i.e using bash programming:
+
+```
+-bash-4.2$ pwd
+/OpenLANE_flow 
+-ls -ltr ( it includes several files like flow.tcl,scripts,conf.py files,README files  nearly 136 files etc) as shown in below image
+
+```
+
 ## DAY 3
 
   1.Git clone vsdstdcelldesign    

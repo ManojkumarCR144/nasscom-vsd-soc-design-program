@@ -179,7 +179,14 @@ First step is to download the lab files required for DRC error fixing by below c
 to open magic use 
 ```
   magic -d XR
+
 ```
+![Screenshot from 2025-02-13 22-34-56](https://github.com/user-attachments/assets/b81337b6-da34-47b6-9e52-cb191b2a7e0f)
+![Screenshot from 2025-02-13 22-38-27](https://github.com/user-attachments/assets/0701f863-be5a-49d2-abfa-6e6c4b2caf84)
+![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/a0b53e00-2b1e-4014-a95d-a536c2fbd543)
+
+.magicrc file
+![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/b0bac58e-69b1-4dfd-962e-7798ab04d4cb)
 
 
 

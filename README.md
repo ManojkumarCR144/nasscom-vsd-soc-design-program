@@ -189,6 +189,57 @@ to open magic use
 ![Screenshot from 2025-02-13 22-39-07](https://github.com/user-attachments/assets/b0bac58e-69b1-4dfd-962e-7798ab04d4cb)
 
 
+Open met met3.mag file from file -> Open in magic window
+
+<br>
+
+![Screenshot from 2024-05-21 02-28-23](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/981cce52-bfa1-4a4b-b97e-dcb17c62bd17)
+<br
+![Screenshot from 2024-05-21 02-29-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d9b57b99-8bd0-41d5-87fd-3b9830e832ab)
+<br>
+
+
+![Screenshot from 2024-05-21 09-27-39](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/51b0d993-0c41-4d77-b664-6be93f8cea59)
+
+![Screenshot from 2024-05-21 09-27-47](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/8de8ec48-cbb8-4b9c-954d-ed008e24c4f8)
+![Screenshot from 2024-05-21 09-29-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d684b929-e8b3-416d-919f-973400895a18)
+<br>
+
+There are some changes to be made in **sky130A.tech file**. Search for the **poly.9** in the **sky130A.tech** file. It appears in both the **POLY** and **uhrpoly** sections,changes given below:
+
+open sky130A.tech file as shown below
+
+<br>
+
+![Screenshot from 2024-05-21 09-30-10](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/ed5c72ea-2148-40ad-b146-a8a769baa0e9)
+
+
+<br>
+
+![Screenshot from 2024-05-21 09-41-52](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d29c9f03-29e7-4b1f-bb74-1611914c04e0)
+
+
+<br>
+
+![Screenshot from 2024-05-21 09-45-04](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/749cf951-eda5-46e4-937f-6ad00744ea70)
+
+<br>
+
+next step is to load the sky130A.tech file in tckon window as as shown below:
+<br>
+![Screenshot from 2024-05-21 09-45-35](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3f281da7-04d7-456c-bbd7-8947901587ef)
+
+<br>
+
+DRC is checked as shown in below image:
+<br>
+
+![Screenshot from 2024-05-21 09-46-51](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/3a3afb3c-1bd6-428f-8fca-6af9c35358b5)
+
+<br>
+    
+</ul>
+
 
 ## DAY 4
 ### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>

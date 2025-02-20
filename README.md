@@ -43,6 +43,27 @@ This repository documents my learnings from a 5-day intensive workshop on VLSI S
 ## 🏆 Acknowledgment  
 
 ---
+
+## DAY 3
+![Screenshot from 2025-02-11 17-59-47](https://github.com/user-attachments/assets/e215a120-f5d8-40b3-96bf-5780845bb61e)
+![Screenshot from 2025-02-11 18-14-13](https://github.com/user-attachments/assets/4fcf3e00-d5f1-4046-aef6-646a6cd6fb11)
+![Screenshot from 2025-02-11 18-13-33](https://github.com/user-attachments/assets/99fb518b-5e1f-4079-9f0b-9996aa039e41)
+![Screenshot from 2025-02-11 20-11-49](https://github.com/user-attachments/assets/c58490c4-4907-424f-824c-99662d47a3d0)
+![Screenshot from 2025-02-11 20-12-38](https://github.com/user-attachments/assets/f8e0e6b4-df90-47dc-bad2-85a687003cc7)
+
+![Screenshot from 2025-02-11 20-14-46](https://github.com/user-attachments/assets/c9a8e9d7-2582-451f-b2d5-a0f82da440b5)
+
+![Screenshot from 2025-02-11 21-05-33](https://github.com/user-attachments/assets/e52c3d81-e176-4eb3-a7fa-5c3a51f8ab5b)
+![Screenshot from 2025-02-11 21-27-09](https://github.com/user-attachments/assets/ade380ef-7256-4d25-b451-040556db0666)
+
+![Screenshot from 2025-02-13 20-25-03](https://github.com/user-attachments/assets/644240de-8de2-4eb2-ac8e-7be5dc1d92b7)
+![Screenshot from 2025-02-12 18-49-11](https://github.com/user-attachments/assets/34ba8037-ebc6-4c14-9135-dc2b271c4645)
+![Screenshot from 2025-02-13 20-27-34](https://github.com/user-attachments/assets/d853404a-871c-410a-8a16-a7684042cf03)
+![Screenshot from 2025-02-13 20-24-05](https://github.com/user-attachments/assets/f2a4c53c-a8a8-4c3d-bd80-87c688decc69)
+![Screenshot from 2025-02-13 20-26-28](https://github.com/user-attachments/assets/bdc46569-22cb-44bf-a5d5-2a7c0ce60313)
+
+
+
 ## DAY 4
 ### PRELAYOUT TIMING ANALYSIS AND CLOCK TREE SYNTHESIS <ul>
 The next step is to get the **.lef** file from the inverter design.

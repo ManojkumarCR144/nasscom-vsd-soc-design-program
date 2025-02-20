@@ -290,9 +290,7 @@ To run the placement use the command
 ```
 run_placement
 ```
-
-
-
+![Screenshot from 2025-02-20 22-53-27](https://github.com/user-attachments/assets/82915ef4-a8a5-4f93-94f6-01e630ed9511)
 
 
 ## DAY 3

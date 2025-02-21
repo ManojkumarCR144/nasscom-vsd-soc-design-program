@@ -250,7 +250,7 @@ Units is measured in microns,
 
 To see the actual layout after the floorplan ,go the folders as shown below:
 ```
-openlane/designs/picorv32a/runs/16-05_16-20/results/floorplan
+openlane/designs/picorv32a/runs/08-02_06-43/results/floorplan
 ```
 
 now we need to open the **magic** file by the  following command
@@ -449,7 +449,7 @@ to open magic use
 Open met met3.mag file from file -> Open in magic window
 
 ![Screenshot from 2024-05-21 02-28-23](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/981cce52-bfa1-4a4b-b97e-dcb17c62bd17)
-<br
+
 ![Screenshot from 2024-05-21 02-29-44](https://github.com/akshaynayak212/NASSCOM-VSD-SoC-Design-Program/assets/169296665/d9b57b99-8bd0-41d5-87fd-3b9830e832ab)
 <br>
 
@@ -625,7 +625,7 @@ set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
 
 
 ```
-set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/placement/picorv32a.placement.def
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/16-02_07-04/results/placement/picorv32a.placement.def
 run_cts
 
 ```
@@ -635,11 +635,11 @@ run_cts
 
 ```
 openroad
-read_lef /openLANE_flow/designs/picorv32a/runs/05-05_10-43/tmp/merged.lef
-read_def /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/cts/picorv32a.cts.def
+read_lef /openLANE_flow/designs/picorv32a/runs/16-02_07-04/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/runs/16-02_07-04/results/cts/picorv32a.cts.def
 write_db pico_cts1.db
 read_db pico_cts1.db
-read_verilog /openLANE_flow/designs/picorv32a/runs/05-05_10-43/results/synthesis/picorv32a.synthesis_cts.v
+read_verilog /openLANE_flow/designs/picorv32a/runs/16-02_07-043/results/synthesis/picorv32a.synthesis_cts.v
 read_liberty $::env(LIB_SYNTH_COMPLETE)
 link_design picorv32a
 read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
@@ -680,7 +680,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 
 ```bash
   #Change directory to path containing generated PDN def
-  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/03-02_22-08/tmp/floorplan/
+  cd Desktop/work/tools/openlane_working_dir/openlane/designs/picorv32a/runs/16-02_07-04/tmp/floorplan/
 
   #Command to load the PDN def in magic tool
   magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read 14-pdn.def &
@@ -708,7 +708,7 @@ magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs
 ![9](https://github.com/user-attachments/assets/750bc2e9-7f4d-4a1d-8895-ece57687fbf2)
 ![10](https://github.com/user-attachments/assets/983e02f7-37d5-4449-ad0e-b8255166eea6)
 
-  Fast route guide present in openlane/designs/picorv32a/runs/26-03_08-45/tmp/routing directory
+  Fast route guide present in openlane/designs/picorv32a/runs/16-02_07-04/tmp/routing directory
   ![Screenshot from 2025-02-19 18-42-21](https://github.com/user-attachments/assets/6bb161d6-d6b9-45ad-8705-20e13b3962f3)
 
 ## Acknowledgement
